@@ -1,0 +1,127 @@
+.WorkSection {
+    height: 90vh;
+    padding: 0 130px;
+}
+
+.WorkSection h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--Font3);
+}
+
+.WorkSection h1 b {
+    color: #5CD247;
+    font-family: var(--Font3);
+}
+
+.WorkCards {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    justify-content: center;
+}
+
+.WorCard {
+    height: 550px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsl(110, 8%, 10%);
+    border-radius: 50px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ColorChangeSeter {
+    position: absolute;
+    background-color: #5cd247ab;
+    height: 300px;
+    width: 300px;
+    top: -100px;
+    right: -100px;
+    filter: blur(130px);
+    border-radius: 50%;
+}
+
+.ImgWork {
+    width: 100%;
+    height: 53%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.ImgWork img {
+    width: inherit;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    filter: brightness(80%);
+}
+
+.ImgWork .Goto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(90deg, hsl(110, 75%, 60%) 0%,
+            hsl(110, 100%, 85%) 40%,
+            hsl(110, 100%, 85%) 60%,
+            hsl(110, 75%, 60%) 100%);
+    ;
+
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.ImgWork .Goto i {
+    color: #000;
+    font-size: 22px;
+    transition: 0.2s ease-in-out;
+}
+
+.WorCard:hover .ImgWork .Goto {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* .WorCard:hover .ImgWork .Goto i {
+    transform: rotate(-145deg);
+} */
+
+.WorkDes {
+    margin-top: 1.4rem;
+}
+
+.Num {
+    font-family: var(--Font3);
+    font-size: 3rem;
+    letter-spacing: -1px;
+    color: #5CD247;
+}
+
+.ProjName {
+    font-family: var(--Font2);
+    font-size: 2.5rem;
+}
+
+.ProjDes {
+    margin-top: 10px;
+    font-family: var(--Font3);
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+    color: #ffffffc5;
+}
+
+:root {
+    --swiper-theme-color: #ffffff;
+}

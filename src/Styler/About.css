@@ -1,0 +1,63 @@
+.AboutSection {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100vw;
+    padding: 7rem 14rem 0;
+}
+
+.AboutSection .LeftAbout {
+    width: 600px;
+}
+
+.LeftAbout h1 {
+    font-family: var(--Font3);
+    font-size: 2.4rem;
+
+}
+
+.LeftAbout h1 b {
+    color: #5CD247;
+    font-family: var(--Font3);
+}
+
+.AboutSection .RightAbout {
+    width: 400px;
+    margin-top: 1rem;
+}
+
+.AboutSection .RightAbout a {
+    text-decoration: none;
+}
+
+.RightAbout p {
+    font-size: 1.3rem;
+}
+
+.RightAbout button {
+    margin-top: 1.234rem;
+    background: linear-gradient(90deg, hsl(110, 75%, 60%) 0%,
+            hsl(110, 100%, 85%) 40%,
+            hsl(110, 100%, 85%) 60%,
+            hsl(110, 75%, 60%) 100%);
+    ;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.RightAbout button span,
+.RightAbout button i {
+    color: #000;
+    font-weight: 900;
+    transition: 0.2s ease-in;
+}
+
+.RightAbout button:hover i {
+    transform: translateX(6px);
+}

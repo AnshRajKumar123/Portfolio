@@ -1,0 +1,178 @@
+.HeroSection {
+    position: relative;
+    height: calc(105vh - 100px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    padding-top: 3rem;
+}
+
+.AbsoluteBox1 {
+    position: fixed;
+    background-color: #5cd247b6;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    filter: blur(110px);
+    left: -110px;
+    top: -150px;
+
+}
+
+.AbsoluteBox2 {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #5cd247b6;
+    filter: blur(110px);
+    right: -125px;
+    top: 30%;
+}
+
+.AbsoluteBox3 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: #5cd247df;
+    filter: blur(210px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.Content p {
+    font-family: var(--Font3);
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.Content h1 {
+    font-family: var(--Font4);
+    font-size: 4rem;
+}
+
+.AutoWriter span {
+    font-size: 4.5rem;
+    font-family: var(--Font4);
+    color: #5CD247;
+}
+
+.Content pre {
+    margin-top: 1rem;
+}
+
+.Cards {
+    position: relative;
+    justify-self: center;
+    margin-top: 6rem;
+}
+
+.FeiCard-1,
+.FeiCard-2,
+.FeiCard-3 {
+    height: 300px;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.FeiCard-1 {
+    background-color: #426337;
+}
+
+.FeiCard-2 {
+    background-color: #fff;
+    position: absolute;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    rotate: 5deg;
+}
+
+.FeiCard-3 {
+    background: linear-gradient(180deg,
+            hsl(108, 29%, 91%) 0%,
+            hsl(108, 91%, 30%) 100%);
+
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    rotate: 10deg;
+}
+
+.Cards img {
+    position: absolute;
+    width: 270px;
+    bottom: 2.5rem;
+    right: -1.25rem;
+    mask-image: linear-gradient(to bottom,
+            hsla(110, 75%, 60%), 70%,
+            transparent 100%);
+}
+
+.HeroCircle {
+    position: absolute;
+    right: -2rem;
+    bottom: -3.5rem;
+    width: 100px;
+    height: 100px;
+    border: 20px solid hsla(110, 24%, 4%, 0.5);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.HeroCircle::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    mask-image: radial-gradient(circle, transparent 30px, #000 0);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+}
+
+.HeroCircle p {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(110, 24%, 98%);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.HeroCircle p i {
+    color: hsl(110, 12%, 8%);
+    font-size: 1.25rem;
+}
+
+.HeroCircle_Text {
+    z-index: 10;
+    color: hsl(110, 24%, 98%);
+    font: 600 .813rem;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: rotate-text 8s linear infinite;
+}
+
+.HeroCircle_Text span {
+    position: absolute;
+    transform-origin: 0 46px;
+    left: 50px;
+    top: 5px;
+    font-size: .652rem;
+}
+
+@keyframes rotate-text {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

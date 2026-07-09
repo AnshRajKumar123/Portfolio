@@ -1,0 +1,99 @@
+.ServiceSection {
+    min-height: 90vh;
+    padding-bottom: 50px;
+}
+
+.ServiceSection h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--Font3);
+}
+
+.ServiceSection h1 b {
+    color: #5CD247;
+    font-family: var(--Font3);
+}
+
+.ServiceBox {
+    margin-top: 7dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ServiceOptB {
+    width: 700px;
+    border-bottom: 0.5px solid #ffffff2e;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.UpperBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Along {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.UpperBody .ServiceLogo i {
+    color: #5CD247;
+    font-size: 2rem;
+}
+
+.UpperBody h1 {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+
+.UpperBody .Dowener {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpperBody .Dowener i {
+    font-size: 13px;
+    color: #ffffffc9;
+}
+
+.LowerHider {
+    margin-top: 1rem;
+    padding-left: 70px;
+    overflow: hidden;
+}
+
+.LowerHider p {
+    font-size: 14px;
+    color: #ffffffc9;
+    width: 90%;
+    line-height: 19px;
+}
+
+.LowerHider .WebTechlogy {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Logy {
+    border: 1px solid #5CD247;
+    padding: 14px 20px;
+    border-radius: 50px;
+}
+.LowerHiderContent {
+    padding-top: 15px;
+}

@@ -1,0 +1,181 @@
+.ContactSection {
+    padding: 80px 10%;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.ContactTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-family: var(--Font3);
+}
+
+.BrandColorText {
+    color: #5CD247;
+    font-family: var(--Font3);
+}
+
+.ContactContainer {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* Form Styles */
+.ContactForm {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.InputWrapper input,
+.InputWrapper textarea {
+    width: 100%;
+    padding: 20px 25px;
+    background-color: #141614;
+    border: 1px solid #1f221f;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.InputWrapper textarea {
+    border-radius: 28px;
+    resize: none;
+}
+
+.InputWrapper input:focus,
+.InputWrapper textarea:focus {
+    border-color: #5CD247;
+}
+
+/* Gradient Action Button */
+.SendButton {
+    background: linear-gradient(90deg, hsl(110, 75%, 60%) 0%,
+            hsl(110, 100%, 85%) 40%,
+            hsl(110, 100%, 85%) 60%,
+            hsl(110, 75%, 60%) 100%);
+    ;
+    color: #000000;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.SendButton i {
+    color: #000000;
+}
+
+.SendButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.SendButton:disabled {
+    background: #444;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Info Cards Styles */
+.ContactDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.ContactInfoCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141614;
+    border: 1px solid #1f221f;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.ContactInfoCard:hover {
+    border-color: rgba(92, 210, 71, 0.4);
+}
+
+.InfoLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.InfoIcon {
+    font-size: 1.5rem;
+    color: #5CD247;
+}
+
+.InfoLeft span {
+    font-size: 0.9rem;
+    color: #888888;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.InfoLeft p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ArrowIcon {
+    color: #ffffff;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+/* Green Highlight Accent Circle for Location Card */
+.LocationCard .CircleArrow {
+    background-color: #5CD247;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.LocationCard .CircleArrow i {
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+/* Responsive Scaling */
+@media (max-width: 992px) {
+    .ContactContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .SendButton {
+        width: 100%;
+    }
+}

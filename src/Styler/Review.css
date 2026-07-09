@@ -1,0 +1,145 @@
+.TestimonialSection {
+    padding: 80px 8%;
+    color: #ffffff;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.TestimonialTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-family: var(--Font3);
+}
+
+/* Uses your custom color 5CD247 */
+.BrandColorText {
+    color: #5CD247;
+    font-family: var(--Font3);
+}
+
+/* src/Styler/Testimonial.css */
+
+.TestimonialSliderContainer {
+    width: 100%;
+    position: relative;
+
+    /* Creates a soft fade transparent layer at the left and right 10% edges */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
+}
+
+/* Individual Feedback Cards Style Layout */
+.FeedbackCard {
+    background: linear-gradient(135deg, #141814 0%, #0f110f 100%);
+    border: 1px solid #1c221c;
+    border-radius: 32px;
+    padding: 40px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.Lighter {
+    position: absolute;
+    bottom: -20%;
+    right: -20%;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #5CD247;
+    filter: blur(120px);
+}
+
+/* Ambient inner green background glow behind card text */
+.FeedbackCard::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(92, 210, 71, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+    bottom: -30px;
+    right: -20px;
+    pointer-events: none;
+}
+
+/* Rating Header Row Styling */
+.RatingRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.RatingNum {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5CD247;
+    /* Matches green numbers from screen */
+}
+
+.Stars {
+    display: flex;
+    gap: 3px;
+    font-size: 0.85rem;
+    color: #5CD247;
+    /* Set stars to your brand color profile */
+}
+
+/* Review Text Paragraph Block */
+.ReviewText {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #b3b3b3;
+    font-weight: 400;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+/* User Card Footer Profile Layout */
+.UserBio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.UserAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid rgba(92, 210, 71, 0.3);
+}
+
+.UserName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e6e6e6;
+}
+
+/* Keep Swiper layout stretching correctly */
+.TestimonialSwiper {
+    padding: 10px 0 30px 0 !important;
+}
+
+
+/* src/Styler/Testimonial.css */
+
+/* Forces the slider to maintain a steady speed instead of slowing down/speeding up */
+.TestimonialSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+    /* */
+}
