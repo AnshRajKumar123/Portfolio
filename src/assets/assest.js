@@ -5,6 +5,7 @@ import Proj2 from './Images/MidNFooDWeb.jpeg'
 import Proj3 from './Images/ParklyImage.jpeg'
 import Proj4 from './Images/ZenitsuWebsite.jpeg'
 import Proj5 from './Images/Appple_Landing.jpeg'
+import Proj6 from './Images/RenegadeImmortal.jpeg'
 
 export const Portfolio = {
     My_Image,
@@ -45,6 +46,13 @@ export const ProjectData = [
         src: Proj5,
         projdes: "A sleek Apple-inspired product landing page featuring smooth GSAP animations, premium visuals, and a fully responsive design for an immersive user experience.",
         link: "https://applelanding-olive.vercel.app/"
+    },
+    {
+        num: "06",
+        projname: "Wang Ling",
+        src: Proj6,
+        projdes: "Renegade Immortal is a visually immersive anime-inspired website that brings Wang Lin's legendary cultivation journey to life through stunning design and smooth interactive animations.",
+        link: "https://renegadeimmortal.vercel.app/"
     },
 ];
 
